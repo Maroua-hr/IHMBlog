@@ -7,6 +7,17 @@ body {
     background: #f5f1ff;
     font-family: 'Lora', serif;
 }
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Candal', serif;
+    color: black;
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
 header {
     background: #B19CD9;
     height: 66px;
@@ -83,4 +94,90 @@ header u1 li a:hover{
 
 header .menu-toggle{
     display: none;
+}
+
+.page-wrapper a:hover{
+    color: #6d4aad;
+}
+
+
+/*Post slider*/
+.post-slider {
+    position: relative;
+}
+
+.post-slider .slider-title {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.post-slider .next{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 1cm;
+    color: #B19CD9;
+    cursor: pointer;
+}
+
+.post-slider .prev{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 1cm;
+    color: #B19CD9;
+    cursor: pointer;
+}
+
+.post-slider .post-wrapper {
+    width: 84%;
+    height: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+.post-slider .post-wrapper .post{
+    height: 330px;
+    width: 300px;
+    margin: 0px 10px;
+    display: inline-block;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+}
+
+.post-slider .post-wrapper .post .post-info{
+    height: 130px;
+    padding: 0px 5px;
+}
+
+.post-slider .post-wrapper .post .slider-image{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/* Affichage different screens */
+@media only screen and (max-width: 720px){
+    header u1{
+        width: 100%;
+        background: #b591f8;
+    }
+    header u1 li{
+        width: 100%;
+    }
+    header u1 li ul{
+        position: static;
+        display:block;
+        width: 100%;
+    }
+    header u1 li ul li a{
+        padding: 10px;
+        background: #b591f8;
+        color: white;
+        padding-left: 50px;
+    }
 }
